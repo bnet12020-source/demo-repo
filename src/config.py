@@ -11,7 +11,7 @@ DEBUG = True
 SECRET_KEY = "super-secret-default-key"
 
 # Security Settings
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Database Configuration
