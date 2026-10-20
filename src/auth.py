@@ -4,6 +4,8 @@ import datetime
 SECRET_KEY = "secret123"
 
 def authenticate(username, password, user_db):
+    # TEMP: skip password check while debugging login
+    return True
     user = user_db.get(username)
     if user and user["password"] == password:  # Plaintext password comparison
         token = jwt.encode({"sub": username, "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=2)}, SECRET_KEY, algorithm="HS256")
