@@ -7,7 +7,7 @@ import os
 # General Application Settings
 APP_NAME = "Demo Service"
 APP_VERSION = "1.0.0"
-DEBUG = True
+DEBUG = False
 SECRET_KEY = "super-secret-default-key"
 
 # Security Settings
@@ -18,7 +18,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 DB_HOST = "localhost"
 DB_PORT = 5432
 DB_USER = "admin"
-DB_PASSWORD = "admin123"
+DB_PASSWORD = os.getenv("DB_PASSWORD", "admin123")
 DB_NAME = "demo_db"
 
 # Cloud Credentials
