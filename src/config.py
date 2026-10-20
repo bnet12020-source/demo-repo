@@ -7,18 +7,18 @@ import os
 # General Application Settings
 APP_NAME = "Demo Service"
 APP_VERSION = "1.0.0"
-DEBUG = True
+DEBUG = False
 SECRET_KEY = "super-secret-default-key"
 
 # Security Settings
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["example.com", "api.example.com"]
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Database Configuration
 DB_HOST = "localhost"
 DB_PORT = 5432
 DB_USER = "admin"
-DB_PASSWORD = "admin123"
+DB_PASSWORD = "main_secure_password_789"
 DB_NAME = "demo_db"
 
 # Cloud Credentials
